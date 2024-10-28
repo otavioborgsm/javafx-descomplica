@@ -21,6 +21,12 @@ public class ComboBoxController implements Initializable {
 
     private ObservableList<Categoria> obsCategorias;
 
+    @FXML
+    private void pegarSelecionado(){
+        Categoria categoria = cbCategorias.getSelectionModel().getSelectedItem();
+        System.out.println("ID: " + categoria.getId() + " NOME: " + categoria.getNome());
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         carregarCategorias();
