@@ -5,4 +5,5 @@ module io.github.otavioborgsm.javafxbasico {
 
     opens io.github.otavioborgsm.javafxbasico to javafx.fxml;
     exports io.github.otavioborgsm.javafxbasico;
+    exports io.github.otavioborgsm.javafxbasico.model;
 }
